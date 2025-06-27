@@ -18,11 +18,11 @@ import { useDemoRouter } from '@toolpad/core/internal';
 const demoTheme = createTheme({
     cssVariables: { colorSchemeSelector: 'data-toolpad-color-scheme' },
     colorSchemes: { light: true, dark: true },
-    breakpoints: { values: { xs: 0, sm: 600, md: 600, lg: 1200, xl: 1536 }, },
+    breakpoints: { values: { xs: 0, sm: 600, md: 600, lg: 1200, xl: 1536 } },
 });
 
 const NAVIGATION = [
-    { kind: 'header', title: 'Main items', },
+    { kind: 'header', title: 'Main items' },
     { segment: 'dashboard', title: 'Dashboard', icon: <DashboardIcon /> },
     { segment: 'user', title: 'User', icon: <PersonIcon /> },
     { segment: 'orders', title: 'Orders', icon: <ShoppingCartIcon /> },
@@ -74,9 +74,7 @@ function Dashboard(props) {
             branding={{
                 logo: <img src="https://mui.com/static/logo.png" alt="MUI logo" />,
                 title: 'Akash Kumar',
-                homeUrl: '/toolpad/core/introduction',
-            }}
-        >
+            }}>
             <DashboardLayout>
                 <DemoPageContent pathname={router.pathname} />
             </DashboardLayout>
